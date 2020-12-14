@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DomianModel.Model
 {
-    class CrmContext: DbContext
+    public class CrmContext: DbContext
     {
         public CrmContext() : base("CrmConnection") { }
         public DbSet<Check> Checks { get; set; }
